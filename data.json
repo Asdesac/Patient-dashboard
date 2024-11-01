@@ -1,0 +1,136 @@
+{
+  "patients": [
+    {
+      "id": 1,
+      "name": "Emily Williams",
+      "img": "./material/Emily_Williams.png",
+      "contact": "+251963950783",
+      "emergency": "+251963950783",
+      "insurance": "Summary Healthy insurance",
+      "birth": "1989",
+      "sex": "Female",
+      "age": "28"
+    },
+    {
+      "id": 2,
+      "name": "Ryan JOhnson",
+      "img": "./material/Ryan_Johnson.png",
+      "contact": "0968485645",
+      "emergency": "347645486943",
+      "insurance": "Summary Healthy insurance",
+      "birth": "1949",
+      "sex": "Male",
+      "age": "45"
+    },
+    {
+      "id": 3,
+      "name": "Bradon mitchell",
+      "img": "./material/Brandol_Mitchell.png",
+      "contact": "34769485325",
+      "emergency": "347683453",
+      "insurance": "Summary Healthy insurance",
+      "birth": "2002",
+      "sex": "Male",
+      "age": "36"
+    },
+    {
+      "id": 4,
+      "name": "Jessica Taylor",
+      "img": "./material/Jesica_Tylor.png",
+      "contact": "34852352",
+      "emergency": "38594582",
+      "insurance": "Summary Healthy insurance",
+      "birth": "1949",
+      "sex": "Female",
+      "age": "28"
+    },
+    {
+      "id": 5,
+      "name": "Samantha Johnson",
+      "img": "./material/Samantha_Johnson.png",
+      "contact": "34852352",
+      "emergency": "38594582",
+      "insurance": "Summary Healthy insurance",
+      "birth": "1949",
+      "sex": "Female",
+      "age": "28"
+    },
+    {
+      "id": 6,
+      "name": "Jessica Taylor",
+      "img": "./material/Jesica_Tylor.png",
+      "contact": "34852352",
+      "emergency": "38594582",
+      "insurance": "Summary Healthy insurance",
+      "birth": "1949",
+      "sex": "Female",
+      "age": "28"
+    },
+    {
+      "id": 7,
+      "name": "Jessica Taylor",
+      "img": "./material/Jesica_Tylor.png",
+      "contact": "34852352",
+      "emergency": "38594582",
+      "insurance": "Summary Healthy insurance",
+      "birth": "1949",
+      "sex": "Female",
+      "age": "28"
+    },
+    {
+      "id": 8,
+      "name": "Jessica Taylor",
+      "img": "./material/Jesica_Tylor.png",
+      "contact": "34852352",
+      "emergency": "38594582",
+      "insurance": "Summary Healthy insurance",
+      "birth": "1949",
+      "sex": "Female",
+      "age": "28"
+    },
+    {
+      "id": 9,
+      "name": "Jessica Taylor",
+      "img": "./material/Jesica_Tylor.png",
+      "contact": "34852352",
+      "emergency": "38594582",
+      "insurance": "Summary Healthy insurance",
+      "birth": "1949",
+      "sex": "Female",
+      "age": "28"
+    },
+    {
+      "id": 10,
+      "name": "Jessica Taylor",
+      "img": "./material/Jesica_Tylor.png",
+      "contact": "34852352",
+      "emergency": "38594582",
+      "insurance": "Summary Healthy insurance",
+      "birth": "1949",
+      "sex": "Female",
+      "age": "28"
+    },
+    {
+      "id": 11,
+      "name": "Jessica Taylor",
+      "img": "./material/Jesica_Tylor.png",
+      "contact": "34852352",
+      "emergency": "38594582",
+      "insurance": "Summary Healthy insurance",
+      "birth": "1949",
+      "sex": "Female",
+      "age": "28"
+    },
+    {
+      "id": 12,
+      "name": "Jessica Taylor",
+      "img": "./material/Jesica_Tylor.png",
+      "contact": "34852352",
+      "emergency": "38594582",
+      "insurance": "Summary Healthy insurance",
+      "birth": "1949",
+      "sex": "Female",
+      "age": "28"
+    }
+  ]
+}

@@ -1,0 +1,643 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  background-color: #f4f7fc;
+  flex-direction: column; /* Stack elements vertically */
+  /* height: 100vh; */
+  padding: 0%;
+  margin: 0%;
+}
+.container {
+  width: 100%;
+  /* height: 100vh; */
+  display: grid;
+  /* grid-template-columns: 24% 48% 24%; */
+  grid-template-columns: 1fr; /* Default to a single column */
+  gap: 1%;
+  margin: 1%;
+  padding: 0%;
+}
+/* serch part */
+/* .search-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+} */
+.left-top-one {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0;
+  padding: 0;
+}
+
+#search-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+#search-icon {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+/* .main_part {
+  width: 100%;
+  height: 100vh;
+  margin: 1%;
+  padding: 0%;
+} */
+
+aside {
+  background-color: #dee5e5;
+  height: auto;
+  padding: 0%;
+  border-radius: 10px;
+  margin: 0%;
+  /* position:; */
+  overflow-y: auto;
+  margin-top: 100px;
+}
+.patient-search {
+  padding-right: 5px !important;
+}
+.search-part {
+  padding-left: 20px !important;
+}
+.aside-left {
+  /* background: red; */
+  scroll-behavior: smooth;
+  /* min-height: fit-content; */
+  /* position: relative !important; */
+  overflow-y: auto !important;
+  padding-left: 30px;
+  margin-left: 20px;
+}
+.patient-list {
+  position: sticky;
+  position: relative;
+}
+.patient-top {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  left: 11px;
+  width: 22%;
+  margin-bottom: 50px;
+  padding: 10px;
+  z-index: 100;
+}
+.left-ul {
+  position: relative;
+  margin-top: 50px;
+}
+.info-display {
+  align-items: center;
+  text-align: center;
+}
+/* left side style
+ */
+.diagnosis-history {
+  padding-top: 0px !important;
+}
+.Reports {
+  /* width: 100%; */
+  padding: 0px;
+  margin: 0px;
+  padding-bottom: 0px !important;
+}
+.show-all {
+  background-color: #0acece;
+  border-radius: 100%;
+}
+#patient-top {
+  /* display: flex; */
+  /* float: left; */
+  /* display: block; */
+  display: grid;
+  grid-template-columns: 50% 50%;
+  float: right;
+}
+#patient-tell {
+  /* margin-left: 0%; */
+  padding-top: 0% !important;
+  padding-left: 0%;
+  font-weight: bold 800;
+}
+#patient-search {
+  /* margin-right: 0%; */
+  padding-top: 0%;
+  padding-right: -20px !important;
+}
+/* li {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  float: right;
+} */
+
+ul {
+  margin-left: -30px;
+  /* padding-right: -20px; */
+  text-align: center;
+  font-weight: small;
+  color: black;
+  position: relative !important;
+}
+li {
+  /* margin-left: -20px; */
+  position: sticky;
+}
+li:hover {
+  color: #e59318;
+  font-weight: bold;
+  transition: calc(15Y);
+  font-size: x-large;
+  font-family: "Courier New", Courier, monospace;
+  text-shadow: red;
+  transform: scale(0.95) rotate(d3eg); /* Adjust scale and rotation as needed */
+  opacity: 0.9; /* Optional: slightly fade the element */
+  /* rotate: 3; */
+}
+
+ul li {
+  /* text-decoration: none; */
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* Single column layout */
+  /* repeat(auto-fit,minmax(3,1fr)) */
+  /* gap: 40%; */
+  padding: 0%;
+  margin: 0%;
+  /* check */
+  /* display: grid;
+  grid-template-columns: 50% 50%;
+  float: right; */
+}
+.error {
+  padding: 0;
+  margin: 0;
+  display: grid !important;
+  /* grid-template-columns: repeat(3, 1fr) !important; */
+}
+.img-id {
+  width: 60px;
+  height: 40px;
+  padding-left: 0 !important;
+  margin-left: -5px !important ;
+}
+.icon-id {
+  /* padding-right: -20px !important; */
+  /* margin-right: -80px !important ; */
+  /* padding-right: 4px !important; */
+  margin: 0px 0px -120px 0px;
+  padding: 0px;
+}
+.info {
+  /* margin-left: -70px !important; */
+  /* padding-left: -10px; */
+  margin-top: 0px;
+  /* margin-left: 10px; */
+  line-height: 1.2rem;
+  padding-right: -10px;
+}
+main {
+  /* background-color: #d; */
+  padding: 20px;
+  border-radius: 10px;
+  margin: 0%;
+  display: block;
+  margin-top: 100px;
+  scroll-behavior: smooth;
+  position: relative;
+}
+.top-part {
+  border-radius: 10px;
+  /* background-color: yellow; */
+}
+.top-part-title {
+  margin: 0%;
+  padding: 0%;
+}
+
+#temperature {
+  background-color: green;
+  align-items: center;
+}
+#heartRate {
+  background-color: red;
+  align-items: center;
+}
+#respiratoryRate {
+  background-color: #fff;
+  align-items: center;
+}
+.bottom-part {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-radius: 5px rgba(245, 245, 245, 0.36);
+  text-align: center;
+  gap: 5px;
+  align-items: center;
+}
+.pree {
+  align-items: center;
+  text-align: center;
+}
+.dawload-icon {
+  /* margin-right: 0% !important; */
+  padding-left: 20px !important;
+}
+.aside-rb {
+  /* display: flex; */
+  /* display: inline; */
+}
+.info-icon {
+  width: 20px;
+  height: 20px;
+}
+header {
+  grid-column: span 3;
+  height: 50px;
+}
+.vital-stats {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Navbar styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 20px; */
+  /* padding-top: 30px !important; */
+
+  padding-top: 50px;
+  padding-right: 10px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+  position: fixed;
+  top: 0 !important;
+  z-index: 1000;
+}
+.settings {
+  padding-right: 20px;
+}
+.owner {
+  /* padding-bottom: 40px; */
+  font-family: serif;
+  padding-left: 5px;
+}
+.logo {
+  /* font-size: 1.5em; */
+  /* font-weight: bold; */
+  /* color: #4a4a4a; */
+  padding-left: 0%;
+  height: 80%;
+  margin: 0%;
+  padding-bottom: 10px;
+}
+
+/* Navigation links styling */
+.nav-links ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #4a4a4a;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #4a90e2;
+}
+
+/* Mobile menu button */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+/* error parts  */
+/* Style for the patient list items */
+.left-ul li {
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Center items vertically */
+  padding: 10px; /* Add padding for better spacing */
+  margin: 5px 0; /* Space between list items */
+  background-color: #fff; /* White background for list items */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: background-color 0.3s; /* Smooth transition for hover effects */
+}
+
+/* Hover effect for list items */
+.left-ul li:hover {
+  background-color: #e6f7ff; /* Light blue background on hover */
+}
+
+/* Error class style */
+.error {
+  /* border: 2px solid #ff4d4d; Red border for error indication */
+}
+
+/* Image styling */
+.img-id {
+  width: 50px; /* Fixed width */
+  height: 50px; /* Fixed height */
+  border-radius: 50%; /* Circular images */
+  margin-right: 10px; /* Spacing between image and text */
+}
+
+/* Info text styling */
+.info {
+  flex-grow: 1; /* Allow text to take available space */
+  font-size: 16px; /* Set font size */
+  color: #333; /* Text color */
+}
+
+/* Icon styling */
+.icon-id {
+  width: 20px; /* Fixed width for icons */
+  height: 20px; /* Fixed height for icons */
+  cursor: pointer; /* Pointer cursor on hover */
+  margin-left: 10px; /* Space between info text and icon */
+}
+/* table {
+  width: 100%;
+  height: 100%;
+}
+table,
+tr,
+td,
+th {
+  gap: 10px;
+}
+tr {
+  padding: 500px;
+} */
+table {
+  width: 100%;
+  overflow-y: auto;
+  /* height: 100%; */
+  padding-top: 0px !important;
+}
+table,
+tr,
+td,
+th {
+  gap: 10px;
+  overflow-y: auto;
+  padding-top: 20px;
+}
+.Reports {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  border-radius: rgba(25, 7, 7, 0.786);
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+}
+.part-1 {
+  color: #2575d0 !important;
+  padding-top: 20px;
+}
+.part-2 {
+  color: #e59318;
+  padding-top: 20px;
+}
+.part-3 {
+  color: #b2e776;
+  padding-top: 20px;
+}
+.part-4 {
+  color: cyan;
+  padding-top: 20px;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  /* Hide desktop nav and show mobile toggle */
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .menu-toggle {
+    display: inline;
+  }
+
+  /* Show nav links when active */
+  .nav-links.active {
+    display: block;
+  }
+}
+/* look ot here */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  background-color: #f4f7fc;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 24% 48% 24%;
+  gap: 1%;
+  margin: 1%;
+  padding: 0;
+}
+
+aside {
+  background-color: #dee5e5;
+  height: 100vh; /* Set a fixed height */
+  padding: 0;
+  border-radius: 10px;
+  overflow-y: auto;
+  /* Enable vertical scrolling */
+}
+input {
+  position: absolute;
+  display: none;
+}
+
+.main {
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 100px;
+  /* overflow-y: auto; */
+  /* Enable vertical scrolling */
+  height: calc(100vh - 100px); /* Adjust for header */
+}
+
+.right {
+  background-color: #dee5e5;
+  height: 100vh; /* Set a fixed height */
+  padding: 0;
+  border-radius: 10px;
+  overflow-y: auto; /* Enable vertical scrolling */
+  display: none;
+}
+.lover {
+  overflow-y: auto !important;
+  padding-top: 20px;
+  margin-top: 10px;
+  /* background: red; */
+}
+/* additional */
+/* General styles for the patient list */
+.left-ul {
+  list-style: none; /* Remove default list styling */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+  overflow-y: auto; /* Enable scrolling if necessary */
+  max-height: 400px; /* Set a max height for the list */
+}
+
+/* Style each list item */
+.left-ul li {
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Center items vertically */
+  padding: 10px; /* Add padding for spacing */
+  margin: 5px 0; /* Add margin between items */
+  background-color: #fff; /* White background */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: background-color 0.3s; /* Smooth background transition */
+}
+
+/* Hover effect for list items */
+.left-ul li:hover {
+  background-color: #e6f7ff; /* Light blue background on hover */
+}
+
+/* Image styling */
+.img-id {
+  width: 50px; /* Set a fixed width */
+  height: 50px; /* Set a fixed height */
+  border-radius: 50%; /* Make images circular */
+  margin-right: 10px; /* Space between image and text */
+}
+
+/* Info text styling */
+.info {
+  flex-grow: 1; /* Allow text to take available space */
+  font-size: 16px; /* Set a readable font size */
+  color: #333; /* Darker text color */
+}
+
+/* Icon styling */
+.icon-id {
+  width: 20px; /* Set a fixed width for icons */
+  height: 20px; /* Set a fixed height for icons */
+  cursor: pointer; /* Change cursor to pointer */
+  margin-left: 10px; /* Space between info and icon */
+}
+/* add */
+/* General styles for both patient lists */
+.left-ul {
+  list-style: none; /* Remove default list styling */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+  overflow-y: auto; /* Enable scrolling if necessary */
+  max-height: 400px; /* Set a max height for the list */
+}
+
+/* Style each list item */
+.left-ul li {
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Center items vertically */
+  padding: 10px; /* Add padding for spacing */
+  margin: 5px 0; /* Add margin between items */
+  background-color: #fff; /* White background */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: background-color 0.3s; /* Smooth background transition */
+}
+
+/* Hover effect for list items */
+.left-ul li:hover {
+  background-color: #e6f7ff; /* Light blue background on hover */
+}
+
+/* Image styling */
+.img-id {
+  width: 50px; /* Set a fixed width */
+  height: 50px; /* Set a fixed height */
+  border-radius: 50%; /* Make images circular */
+  margin-right: 10px; /* Space between image and text */
+}
+
+/* Info text styling */
+.info {
+  flex-grow: 1; /* Allow text to take available space */
+  font-size: 16px; /* Set a readable font size */
+  color: #333; /* Darker text color */
+}
+
+/* Icon styling */
+.icon-id {
+  width: 20px; /* Set a fixed width for icons */
+  height: 20px; /* Set a fixed height for icons */
+  cursor: pointer; /* Change cursor to pointer */
+  margin-left: 10px; /* Space between info and icon */
+}
+
+/* Additional styles for the output section */
+#output {
+  padding: 20px; /* Add padding for the output section */
+  background-color: #f9f9f9; /* Light background for better contrast */
+  border-radius: 8px; /* Rounded corners for the output section */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Ensure that the output section is visually distinct */
+.info-display img {
+  /* width: 100px; Set a fixed width for patient images */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Rounded corners for images */
+}
+/* Additional styles for responsiveness if needed */
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr; /* Stack columns on small screens */
+  }
+
+  aside,
+  .main,
+  .right {
+    height: auto !; /* Allow auto height on small screens */
+  }
+}

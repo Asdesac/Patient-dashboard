@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Patient Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header class="navbar">
+        <img src=".\material\TestLogo.svg" class="logo" alt="" />
+        <!-- <div class="logo"></div> -->
+        <nav class="nav-links">
+          <ul>
+            <li>
+              <img src=".\material\Overivew.svg" alt="" />
+              <a href="#overview">Overview</a>
+            </li>
+            <li>
+              <img src=".\material\patients.svg" alt="" />
+              <a href="#patients">Patients</a>
+            </li>
+            <li>
+              <img src=".\material\schedule.svg" alt="" />
+              <a href="#schedule">Schedule</a>
+            </li>
+            <li>
+              <img src=".\material\mesaage.svg" alt="" />
+              <a href="#messages">Message</a>
+            </li>
+            <li>
+              <img src=".\material\Transaction.svg" alt="" />
+              <a href="#transactions">Transactions</a>
+            </li>
+            <li>
+              <img src=".\material\Docter.png" alt="" />
+              <h4 class="owner">Dr.Jose Simmons</h4>
+            </li>
+            <li>
+              <img src=".\material\settings.svg" class="settings" alt="" />
+              <img src=".\material\dot.svg" alt="show more" />
+            </li>
+          </ul>
+        </nav>
+        <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
+      </header>
+
+      <!-- <div class="main_part"> -->
+      <aside class="aside-left search-container">
+        <!-- Sidebar with Patient List -->
+         <div class="left-top-one">
+          <p class="search-part">patients</p>
+          <input type="text" name="" id="search-icon" />
+          <img
+            onclick="searchDisplay()"
+            src=".\material\search.svg"
+            id="search-input"
+            alt="search-icon"
+          />
+         </div>
+        <div id="patient-list" class="patient-list" -->
+          <div id="patient-top" class="patient-top search-part">
+            <p id="patent-tell"></p>
+            <!-- <p class="search-part">patients</p> -->
+            <!-- <input type="text" name="" id="search-icon" />  -->
+            <!-- <img
+              onclick="searchDisplay()"
+              src=".\material\search.svg"
+              id="search-input"
+              alt="search-icon"
+            />  -->
+          </div>
+        </div>
+        <!-- <br />
+        <ul class="left-ul right patient-list ul-r" id="patient-list">
+          <li data-id="1" class="error">
+            <img
+              src=".\material\Emily_Williams.png"
+              class="img-id"
+              alt="Jesica_Tylor"
+            />
+            <p class="info">Emily Williams<br> Female,28</p>
+            <img src=".\material\dot.svg" class="icon-id" alt="show more" />
+          </li>
+          <li data-id="2" class="error">
+            <img src=".\material\Ryan_Johnson.png" class="img-id" alt="" />
+            <p class="info">Ryan Johnson<br>Male,45</p>
+            <img src=".\material\dot.svg" class="icon-id" alt="show more" />
+          </li>
+          <li data-id="3" class="error">
+            <img src=".\material\Brandol_Mitchell.png" class="img-id" alt="" />
+            <p class="info">Brandol Mitchell<br>male,36</p>
+            <img src=".\material\dot.svg" class="icon-id" alt="show more" />
+          </li>
+          < onclick="fetchPatientData()" -->
+          <li data-id="4" class="error" >
+            <img src=".\material\Jesica_Tylor.png" class="img-id" alt="" />
+            <p class="info">Jesica Tylor<br>Female,28</p>
+            <img src=".\material\dot.svg" class="icon-id" alt="show more" />
+          </li>
+          <li data-id="5"  class="error">
+            <img src=".\material\Samantha_Johnson.png" class="img-id" alt="" />
+            <p class="info"> Samantha Johnson <br>Female,56</p>
+            <img src=".\material\dot.svg" class="icon-id" alt="show more" />
+          </li>
+          <li data-id="5"  class="error">
+            <img src=".\material\Ashiey_Johnson.png" class="img-id" alt="" />
+            <p class="info">Ashiey Johnson<br>Female,54</p>
+            <img src=".\material\dot.svg" class="icon-id" alt="show more" />
+          </li>
+          <li data-id="7"  class="error">
+            <img src=".\material\Olivia_Davis.png" class="img-id" alt="" />
+            <p class="info">Olivia Davis<br>Female,32</p>
+            <img src=".\material\dot.svg" class="icon-id" alt="show more" />
+          </li>
+          <li data-id="8"  class="error">
+            <img src=".\material\Tyler_Devis.png" class="img-id" alt="" />
+            <p class="info">Tyler Devis<br>Male,19</p>
+            <img src=".\material\dot.svg" class="icon-id" alt="show more" />
+          </li>
+          <li data-id="9"  class="error">
+            <img src=".\material\Kevin_Anderson.png" class="img-id" alt="" />
+            <p class="info">Kevin Anderson<br>Male,30</p>
+            <img src=".\material\dot.svg" class="icon-id" alt="show more" />
+          </li>
+          <li data-id="10"  class="error">
+            <img src=".\material\Dylan_Thompson.png" class="img-id" alt="" />
+            <p class="info">Dylan Thompson<br>Male,36</p>
+            <img src=".\material\dot.svg" class="icon-id" alt="show more" />
+          </li>
+          <li data-id="11"  class="error">
+            <img src=".\material\Nathan_Evans.png" class="img-id" alt="" />
+            <p class="info">Nathan Evans<br>MAle,58</p>
+            <img src=".\material\dot.svg" class="icon-id" alt="show more" />
+          </li>
+          <li data-id="12"  class="error">
+            <img src=".\material\Mike_Nolan.png" class="img-id" alt="" />
+            <p class="info">Mike_Nolan<br>MAle,31</p>
+            <img src=".\material\dot.svg" class="icon-id" alt="" />
+          </li>
+        </ul>
+        <!-- <h1>this is</h1> -->
+      </aside>
+
+      <main class="main">
+        <div class="top-part">
+          <!-- Diagnosis History Section -->
+          <h2 class="top-part-title">Diagnosis History</h2>
+          <!-- <div id="patient-info"></div>
+          <canvas id="bloodPressureChart"></canvas>
+          < id="vitals">
+            <p id="respiratoryRate"></p>
+            <p id="temperature"></p>
+            <p id="heartRate"></p>
+          </  <! <img
+            src=".\material\Results.png"
+            class="Reports"
+            alt="Reports-Image"
+          />div> -->
+          <!-- <img
+            src=".\material\Results.png"
+            class="Reports"
+            alt="Reports-Image"
+          />
+          <section id="diagnosis-history"> -->
+            <!-- <canvas id="bloodPressureChart"></canvas>
+            <div class="vital-stats"></div> -->
+            <img
+            src=".\material\Results.png"
+            class="Reports"
+            alt="Reports-Image"
+          />
+            <div class="bottom-part">
+              <div id="respiratoryRate">
+                <img src=".\material\respiratory_rate.svg" alt="" />
+                <h3>RespiratoryRate</h3>
+                <p class="pree">
+                  <b>20 bpm</b> <br />
+                  normal
+                </p>
+              </div>
+              <div id="temperature">
+                <img src=".\material\temperature.svg" alt="" />
+                <h3>Temperature</h3>
+                <p class="pree">
+                  <b>98.6<sup>o</sup>F</b> <br />
+                  normal
+                </p>
+              </div>
+              <div id="heartRate">
+                <img src=".\material\HeartBPM.svg" alt="" />
+                <h3>Heart BPM</h3>
+                <p class="pree">
+                  <b>78 bpm</b> <br />
+                  lower then average
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+        <!-- Diagnostic List -->
+        <section id="diagnostic-list">
+          <h3>Diagnosis lists</h3>
+          <table>
+            <thead>
+              <tr class="part-1">
+                <th>Problem Diagnosis</th>
+                <th>Description</th>
+                <th>Status</th>
+              </tr>
+              <tr class="part-2">
+                <td>Hypertation</td>
+                <td>Chronic High bloodPressure</td>
+                <td>Under</td>
+              </tr>
+              <tr class="part-3">
+                <td>Type 2 Diabet</td>
+                <td>Insulin resistance and elevated blood sugar</td>
+                <td>Cured</td>
+              </tr>
+              <tr class="part-4">
+                <td>Asthma</td>
+                <td>Recurrent episodes of bronchial constriction</td>
+                <td>inactive</td>
+              </tr>
+            </thead>
+            <tbody id="diagnostic-data"></tbody>
+          </table>
+         
+        </section>
+      </main>
+
+      <aside class="aside-right">
+        <!-- Patient Info & Lab Results -->
+        <div id="output">
+        <div class="info-display">
+          <img src=".\material\Jesica_Tylor.png" id="img" alt="Jesica Tylor" />
+          <h3  id="name">Jesica Tylor</h3>
+          <div>
+            <p><img src=".\material\schedule.svg" class="info-icon" alt="" />  <b>Date of Birth</b>
+              <p id="birth"> Auguest 23,1997 </p>
+    </p>
+          </div>
+          <div>
+            <p><img src=".\material\PhoneIcon.svg" class="info-icon" alt="FemaleIcon">  <b>contact info</b>
+    <b id="contact">+251963950783</b>
+    </p>
+          </div>
+          <div>
+            <p><img src=".\material\PhoneIcon.svg" class="info-icon" alt="" />  <b>Emergency contact</b>
+     <p class="emmergency"> +251963950783 </p>
+    </p>
+          </div>
+          <div>
+            <p><img src=".\material\InsuranceIcon.svg" class="info-icon" alt="FemaleIcon">  <b>Insurance provider</b>
+              <p id="insurance">Summary Healthy insurance </p>
+    </p>
+          </div>
+          </div>
+          
+        </div>
+
+
+        
+        <!-- the bottom -->
+         <div class="lover">
+        <h2 class="show-all" style="text-align: center;">Show more</h2>
+        <div id="patient-list">
+          <h2>Lab Results</h2>
+
+          <div id="patient-top">
+            <!-- <p id="patent-tell">patients</p> -->
+            <img
+              src=".\material\download_icon.svg"
+              id="patient-search"
+              alt="search-icon"
+            />
+          </div>
+          <p>Blood Tests</p>
+        </div>
+        <div id="patient-list">
+          <!-- <h2>Lab Results</h2> -->
+          <div id="patient-top">
+            <!-- <p id="patent-tell">patients</p> -->
+            <img
+              src=".\material\download_icon.svg"
+              id="patient-search"
+              alt="search-icon"
+            />
+          </div>
+          <p>CT Scans</p>
+          <!-- <div id="patient-info"></div> -->
+          <div id="lab-results">
+            <div id="patient-top">
+              <!-- <p id="patent-tell">patients</p> -->
+              <img
+                src=".\material\download_icon.svg"
+                id="patient-search"
+                alt="search-icon"
+              />
+            </div>
+            <p>Radiology Reports</p>
+          </div>
+          <div id="lab-results">
+            <div id="patient-top">
+              <!-- <p id="patent-tell">patients</p> -->
+              <img
+                src=".\material\download_icon.svg"
+                id="patient-search"
+                alt="search-icon"
+              />
+            </div>
+            <p>X-Rays</p>
+          </div>
+          <div id="lab-results">
+            <div id="patient-top">
+              <!-- <p id="patent-tell">patients</p> -->
+              <img
+                src=".\material\download_icon.svg"
+                id="patient-search"
+                alt="search-icon"
+              />
+            </div>
+            <p>Urine</p>
+          </div>
+          </div>
+        </div>
+
+      </aside>
+      <!-- </div> -->
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+    <script src="chart.js"></script>
+  </body>
+</html>
